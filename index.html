@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebSingh – Digital Marketing Agency</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link href="asset/css/font.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="asset/css/style.css" rel="stylesheet">
+  <link href="asset/js/custom.js">
+</head>
+
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="curDot"></div>
+  <div class="cursor-ring" id="curRing"></div>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="logo" onclick="showPage('home')">
+      <div class="logo-mark">W</div>
+      Web<span>Singh</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#" onclick="showPage('home')" class="active" id="nav-home">Home</a></li>
+      <li><a href="#" onclick="showPage('about')" id="nav-about">About Us</a></li>
+      <li><a href="#" onclick="showPage('portfolio')" id="nav-portfolio">Portfolio</a></li>
+      <li><a href="#" onclick="showPage('services')" id="nav-services">Services</a></li>
+      <li><a href="#" onclick="showPage('contact')" id="nav-contact">Contact Us</a></li>
+    </ul>
+    <button class="nav-cta" onclick="showPage('contact')">Get Started</button>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ═══════ HOME ═══════ -->
+  <div class="page active" id="page-home">
+
+    <section class="hero grid-bg">
+      <div class="orb orb-g" style="width:500px;height:500px;top:-100px;right:-100px;z-index:1"></div>
+      <div class="orb orb-w" style="width:400px;height:400px;bottom:-100px;left:10%;z-index:1"></div>
+      <div class="hero-content">
+        <div class="hero-badge">⚡ Award-Winning Digital Agency</div>
+        <h1>We Grow Your<br><em>Business Online</em><br>with Smart Digital<br>Marketing</h1>
+        <p>WebSingh delivers data-driven SEO, AI-powered ads, and stunning web experiences that generate real leads,
+          real sales, and real growth.</p>
+        <div class="hero-btns">
+          <a href="#" class="btn btn-g" onclick="showPage('contact')"><span>Start Your Project</span><span>→</span></a>
+          <a href="#" class="btn btn-o" onclick="showPage('portfolio')"><span>View Our Work</span></a>
+        </div>
+      </div>
+      <div class="websingh_img">
+        <img src="asset/img/md.png" width="100%">
+        <div class="md_info">
+          <h4>Sumit Hazran</h4>
+          <span class="0">Chief Executive Officer</span>
+        </div>
+      </div>
+      <div class="scroll-ind"><span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- Ticker -->
+    <div class="ticker-wrap">
+      <div class="ticker" id="ticker">
+        <div class="ticker-item">SEO Services <span class="ticker-sep">★</span></div>
+        <div class="ticker-item">PPC Advertising <span class="ticker-sep">★</span></div>
+        <div class="ticker-item">AI SEO <span class="ticker-sep">★</span></div>
+        <div class="ticker-item">Web Design <span class="ticker-sep">★</span></div>
+        <div class="ticker-item">Social Media <span class="ticker-sep">★</span></div>
+        <div class="ticker-item">Email Marketing <span class="ticker-sep">★</span></div>
+        <div class="ticker-item">Brand Strategy <span class="ticker-sep">★</span></div>
+        <div class="ticker-item">Content Marketing <span class="ticker-sep">★</span></div>
+        <div class="ticker-item">SEO Services <span class="ticker-sep">★</span></div>
+        <div class="ticker-item">PPC Advertising <span class="ticker-sep">★</span></div>
+        <div class="ticker-item">AI SEO <span class="ticker-sep">★</span></div>
+        <div class="ticker-item">Web Design <span class="ticker-sep">★</span></div>
+        <div class="ticker-item">Social Media <span class="ticker-sep">★</span></div>
+        <div class="ticker-item">Email Marketing <span class="ticker-sep">★</span></div>
+        <div class="ticker-item">Brand Strategy <span class="ticker-sep">★</span></div>
+        <div class="ticker-item">Content Marketing <span class="ticker-sep">★</span></div>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats-bar">
+      <div class="sbar-stat">
+        <div class="sbar-icon sbar-green"><i class="bi bi-shield-check"></i></div>
+        <h3>SSL Secured</h3>
+        <p>256-bit encryption</p>
+      </div>
+      <div class="sbar-stat">
+        <div class="sbar-icon sbar-orange"><i class="bi bi-award"></i></div>
+        <h3>13+ Years</h3>
+        <p>Industry Experience</p>
+      </div>
+      <div class="sbar-stat">
+        <div class="sbar-icon sbar-blue"><i class="bi bi-check2-circle"></i></div>
+        <h3>700+ Projects</h3>
+        <p>Successfully Delivered</p>
+      </div>
+      <div class="sbar-stat">
+        <div class="sbar-icon sbar-yellow"><i class="bi bi-star"></i></div>
+        <h3>4.8/5 Rating</h3>
+        <p>On Google Reviews</p>
+      </div>
+      <div class="sbar-stat">
+        <div class="sbar-icon sbar-purple"><i class="bi bi-patch-check"></i></div>
+        <h3>Verified Business</h3>
+        <p>Registered Company</p>
+      </div>
+      <div class="sbar-stat">
+        <div class="sbar-icon sbar-cyan"><i class="bi bi-lock"></i></div>
+        <h3>100% Secure</h3>
+        <p>Payment Protected</p>
+      </div>
+    </div>
+
+    <!-- Services -->
+    <section class="section" style="background:var(--bg); border-bottom:1px solid var(--border);">
+      <!-- <section class="section" style="background:var(--bg)"> -->
+      <div class="chip reveal">Partners</div>
+      <h2 class="sec-title reveal">Building Lasting Partnerships <em>With Leading Companies</em></h2>
+      <p class="sec-sub reveal">Working with this company has been a best experience. Very knowledgeable and responsive. Owner does regular follow ups and send you timely reports on the progress. Highly recommend.</p>
+      <div class="tech-section">
+        <div class="card-container">
+
+          <!-- CARD -->
+          <div class="card">
+            <a href="https://xtremebondcleaners.au/" target="_blank">
+              <div class="logo-box">
+                <img class="logo-fit logo-fit-standard"
+                  src="https://xtremebondcleaners.au/wp-content/uploads/2026/02/image-13.png" alt="Xtreme Bond Cleaners">
+              </div>
+            <h3>Xtreme Bond Cleaners</h3></a>
+          </div>
+
+          <div class="card">
+            <a href="https://glossnroll.com.au/" target="_blank">
+              <div class="logo-box">
+                <img class="logo-fit logo-fit-wide"
+                  src="https://glossnroll.com.au/wp-content/uploads/2024/02/GlossNRole-01-1536x763.png" alt="Glossn Roll">
+              </div>
+            <h3>Glossn Roll</h3></a>
+          </div>
+
+          <div class="card">
+            <a href="https://saathitravel.com.au/" target="_blank">
+              <div class="logo-box">
+                <img class="logo-fit logo-fit-wide"
+                  src="https://saathitravel.com.au/wp-content/uploads/2025/05/logo-final-1.png" alt="saathi Travel">
+              </div>
+            <h3>saathi Travel</h3></a>
+          </div>
+
+          <div class="card black_logo">
+            <a href="https://www.bobbyhendlish.com/" target="_blank">
+              <div class="logo-box">
+                <img class="logo-fit logo-fit-wide"
+                  src="https://www.bobbyhendlish.com/wp-content/uploads/2025/07/Logo-Bobby-02-1-1.png" alt="Bobby Hendlish">
+              </div>
+            <h3>Bobby Hendlish</h3></a>
+          </div>
+
+          <div class="card">
+            <a href="https://zimaxrestoration.com/" target="_blank">
+              <div class="logo-box">
+                <img class="logo-fit logo-fit-tall"
+                  src="https://cdn-ikplfhn.nitrocdn.com/WsEryopMteEvJsGADDtIbFtJctRQNElz/assets/images/optimized/rev-5fceb7c/zimaxrestoration.com/wp-content/uploads/2023/03/logo.png"
+                  alt="Zimax Restoration">
+              </div>
+            <h3>Zimaxre Storation</h3></a>
+          </div>
+
+          <div class="card">
+            <a href="https://kosreseptic.com/" target="_blank">
+              <div class="logo-box">
+                <img class="logo-fit logo-fit-medium"
+                  src="https://kosreseptic.com/cdn/shop/files/logo-01_00584ad3-de17-4f76-a7e5-a88ad843db71_125x.png?v=1691022602" alt="kosreseptic">
+              </div>
+            <h3>kosreseptic</h3></a>
+          </div>
+
+          <div class="card">
+            <a href="https://www.newgendepot.com/" target="_blank">
+              <div class="logo-box">
+                <img class="logo-fit logo-fit-wide"
+                  src="https://www.newgendepot.com/cdn/shop/files/newgendepot-logo.png" alt="Cilantro London">
+              </div>
+            <h3>Cilantro London</h3></a>
+          </div>
+
+          <div class="card black_logo">
+            <a href="https://refineoptometry.com/" target="_blank">
+              <div class="logo-box">
+                <img class="logo-fit logo-fit-wide logo-on-dark"
+                  src="https://refineoptometry.com/wp-content/uploads/2024/10/Logo_white.png" alt="Refine Optometry">
+              </div>
+            <h3>Refine Optometry</h3></a>
+          </div>
+
+          <div class="card">
+            <a href="https://www.newgendepot.com/" target="_blank">
+              <div class="logo-box">
+                <img class="logo-fit logo-fit-wide"
+                  src="https://www.newgendepot.com/cdn/shop/files/newgendepot-logo.png?v=1757346037&width=330" alt="New Gendepot">
+              </div>
+              <h3>New Gendepot</h3></a>
+          </div>
+
+          <div class="card">
+            <a href="https://www.floreocoffee.com/" target="_blank">
+              <div class="logo-box">
+                <img class="logo-fit logo-fit-medium"
+                  src="https://www.floreocoffee.com/cdn/shop/files/Asset_3.png?v=1711214218&width=450" alt="Floreo Coffee">
+              </div>
+            <h3>Floreo Coffee</h3></a>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+  <section class="section" style="background:var(--bg2);border-top:1px solid var(--border)">
+      <div class="chip reveal">Pricing</div>
+      <h2 class="sec-title reveal">Simple, <em>Transparent Pricing</em></h2>
+      <p class="sec-sub reveal">No hidden fees. No lock-in contracts. Just clear value.</p>
+      <div class="price-grid">
+        <div class="price-card reveal">
+          <h3>Starter</h3>
+          <div class="price-amount">₹15,000</div>
+          <div class="price-period">per month</div>
+          <ul class="price-feats">
+            <li>SEO Audit & Setup</li>
+            <li>5 Target Keywords</li>
+            <li>2 Blog Posts/Month</li>
+            <li>Monthly Report</li>
+            <li>Email Support</li>
+          </ul>
+          <a href="#" class="btn btn-o" onclick="showPage('contact')"
+            style="width:100%;justify-content:center"><span>Get Started</span></a>
+        </div>
+        <div class="price-card pop reveal" style="transition-delay:.1s">
+          <div class="pop-badge">Most Popular</div>
+          <h3>Growth</h3>
+          <div class="price-amount">₹35,000</div>
+          <div class="price-period">per month</div>
+          <ul class="price-feats">
+            <li>Full SEO + PPC Management</li>
+            <li>20 Target Keywords</li>
+            <li>8 Blog Posts/Month</li>
+            <li>Social Media (3 platforms)</li>
+            <li>Bi-weekly Reports</li>
+            <li>Dedicated Account Manager</li>
+          </ul>
+          <a href="#" class="btn btn-g" onclick="showPage('contact')"
+            style="width:100%;justify-content:center"><span>Get Started</span></a>
+        </div>
+        <div class="price-card reveal" style="transition-delay:.2s">
+          <h3>Enterprise</h3>
+          <div class="price-amount">Custom</div>
+          <div class="price-period">tailored to you</div>
+          <ul class="price-feats">
+            <li>Full Digital Marketing Suite</li>
+            <li>Unlimited Keywords</li>
+            <li>AI SEO Integration</li>
+            <li>Web Design Included</li>
+            <li>Weekly Strategy Calls</li>
+            <li>Priority 24/7 Support</li>
+          </ul>
+          <a href="#" class="btn btn-o" onclick="showPage('contact')"
+            style="width:100%;justify-content:center"><span>Contact Us</span></a>
+        </div>
+      </div>
+    </section>
+  <section class="section" style="background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+      <div class="chip reveal">Our Team</div>
+      <h2 class="sec-title reveal">Meet the <em>Experts</em> Behind Your Growth</h2>
+      <p class="sec-sub reveal">A diverse team of strategists, creatives, and tech specialists all focused on your
+        results.</p>
+      <div class="team-grid">
+        <div class="team-card reveal">
+          <div class="team-photo" style="background:linear-gradient(135deg,#0A1628,#0D3426)"><img src="asset/img/seoexpert.webp"></div>
+          <div class="team-info">
+            <h4>Amritpal Singh</h4>
+            <div class="role">SEO & Social Media Expert</div>
+          </div>
+        </div>
+        <div class="team-card reveal" style="transition-delay:.08s">
+          <div class="team-photo" style="background:linear-gradient(135deg,#0A1628,#1a3a2e)"><img src="asset/img/uiuxexpert.webp"></div>
+          <div class="team-info">
+            <h4>Bhajan Singh</h4>
+            <div class="role">Ui/Ux Designerf</div>
+          </div>
+        </div>
+        <div class="team-card reveal" style="transition-delay:.16s">
+          <div class="team-photo" style="background:linear-gradient(135deg,#0A1628,#1a2e38)"><img src="asset/img/webdesigner.webp"></div>
+          <div class="team-info">
+            <h4>Sahil Dutt</h4>
+            <div class="role">Web Designer</div>
+          </div>
+        </div>
+        <div class="team-card reveal" style="transition-delay:.24s">
+          <div class="team-photo" style="background:linear-gradient(135deg,#0A1628,#2a2010)"><img src="asset/img/webdeveloper.webp"></div>
+          <div class="team-info">
+            <h4>Neha Gupta</h4>
+               <div class="role">Web Developers</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section web-types-section" style="background:var(--bg)">
+      <div class="web-types-head">
+        <div class="chip reveal" style="margin:0 auto 18px">Website Development Solutions</div>
+        <h2 class="sec-title reveal">Types of <em>Websites</em> We Build</h2>
+        <p class="sec-sub reveal">
+          Looking for a website developer near you? We build fast, responsive websites tailored to your business needs
+          from simple landing pages to complex web applications.
+        </p>
+      </div>
+      <div class="web-types-grid">
+        <article class="web-type-card reveal">
+          <div class="web-type-line line-green"></div>
+          <div class="web-type-icon icon-green"><i class="bi bi-briefcase"></i></div>
+          <h3>Business Website</h3>
+          <p>Professional websites that build trust and credibility. Modern design for companies, agencies, and service businesses.</p>
+          <div class="web-type-tags">
+            <span>Company profile</span>
+            <span>Service pages</span>
+            <span>Team section</span>
+            <span>Contact forms</span>
+          </div>
+        </article>
+        <article class="web-type-card reveal" style="transition-delay:.06s">
+          <div class="web-type-line line-gold"></div>
+          <div class="web-type-icon icon-gold"><i class="bi bi-bag"></i></div>
+          <h3>Ecommerce Store</h3>
+          <p>Complete online stores with secure payments, smooth checkout, and product management built for scale.</p>
+          <div class="web-type-tags">
+            <span>Product catalog</span>
+            <span>Payment gateway</span>
+            <span>Order tracking</span>
+            <span>Inventory system</span>
+          </div>
+        </article>
+        <article class="web-type-card reveal" style="transition-delay:.12s">
+          <div class="web-type-line line-blue"></div>
+          <div class="web-type-icon icon-blue"><i class="bi bi-code-slash"></i></div>
+          <h3>Custom Web Apps</h3>
+          <p>Tailored solutions for dashboards, CRMs, booking systems, and portals designed around your business workflow.</p>
+          <div class="web-type-tags">
+            <span>Custom features</span>
+            <span>Database design</span>
+            <span>API integration</span>
+            <span>User roles</span>
+          </div>
+        </article>
+        <article class="web-type-card reveal" style="transition-delay:.18s">
+          <div class="web-type-line line-purple"></div>
+          <div class="web-type-icon icon-purple"><i class="bi bi-arrow-repeat"></i></div>
+          <h3>Website Redesign</h3>
+          <p>Transform your outdated website into a faster, sharper, and more conversion-focused digital experience.</p>
+          <div class="web-type-tags">
+            <span>Modern UI/UX</span>
+            <span>Speed boost</span>
+            <span>Mobile first</span>
+            <span>SEO migration</span>
+          </div>
+        </article>
+        <article class="web-type-card reveal" style="transition-delay:.24s">
+          <div class="web-type-line line-pink"></div>
+          <div class="web-type-icon icon-pink"><i class="bi bi-bullseye"></i></div>
+          <h3>Landing Pages</h3>
+          <p>High-converting pages for campaigns and lead generation, built for faster load times and stronger conversion flow.</p>
+          <div class="web-type-tags">
+            <span>Lead capture</span>
+            <span>Ads ready</span>
+            <span>Fast loading</span>
+            <span>Conversion focused</span>
+          </div>
+        </article>
+        <article class="web-type-card reveal" style="transition-delay:.3s">
+          <div class="web-type-line line-cyan"></div>
+          <div class="web-type-icon icon-cyan"><i class="bi bi-layers"></i></div>
+          <h3>SaaS & Startups</h3>
+          <p>Launch-ready platforms with secure backend flows, dashboards, user auth, and scalable architecture.</p>
+          <div class="web-type-tags">
+            <span>User auth</span>
+            <span>Payment setup</span>
+            <span>Admin dashboard</span>
+            <span>Scalable code</span>
+          </div>
+        </article>
+      </div>
+    </section>
+        <!-- Services -->
+    <section class="section" style="background:var(--bg)">
+      <div class="chip reveal">What We Do</div>
+      <h2 class="sec-title reveal">Services That Drive <em>Real Growth</em></h2>
+      <p class="sec-sub reveal">From search engine domination to conversion-focused web design — every digital channel
+        covered.</p>
+      <div class="svc-grid">
+        <div class="svc-card reveal" onmousemove="cardGlow(this,event)">
+          <div class="svc-icon"><i class="bi bi-search"></i></div>
+          <h3>SEO & Organic Growth</h3>
+          <p>Rank higher, attract the right audience, and drive sustainable traffic that converts into customers.</p>
+          <div class="svc-arrow">-></div>
+        </div>
+        <div class="svc-card reveal" onmousemove="cardGlow(this,event)" style="transition-delay:.05s">
+          <div class="svc-icon"><i class="bi bi-megaphone"></i></div>
+          <h3>Paid Advertising (PPC)</h3>
+          <p>Google & Meta ads optimised for maximum ROI -> every rupee you spend works harder.</p>
+          <div class="svc-arrow">-></div>
+        </div>
+        <div class="svc-card reveal" onmousemove="cardGlow(this,event)" style="transition-delay:.1s">
+          <div class="svc-icon"><i class="bi bi-cpu"></i></div>
+          <h3>AI SEO</h3>
+          <p>Next-gen AI-powered optimisation strategies keeping you ahead of algorithm changes.</p>
+          <div class="svc-arrow">-></div>
+        </div>
+        <div class="svc-card reveal" onmousemove="cardGlow(this,event)" style="transition-delay:.15s">
+          <div class="svc-icon"><i class="bi bi-code-slash"></i></div>
+          <h3>Web Design & Dev</h3>
+          <p>Beautiful, fast, and conversion-optimised websites built to impress and perform.</p>
+          <div class="svc-arrow">-></div>
+        </div>
+        <div class="svc-card reveal" onmousemove="cardGlow(this,event)" style="transition-delay:.2s">
+          <div class="svc-icon"><i class="bi bi-people"></i></div>
+          <h3>Social Media Marketing</h3>
+          <p>Engaging content and targeted campaigns that build your brand and loyal community.</p>
+          <div class="svc-arrow">-></div>
+        </div>
+        <div class="svc-card reveal" onmousemove="cardGlow(this,event)" style="transition-delay:.25s">
+          <div class="svc-icon"><i class="bi bi-envelope"></i></div>
+          <h3>Email Marketing</h3>
+          <p>Automated, personalized email sequences that nurture leads and drive repeat purchases.</p>
+          <div class="svc-arrow">-></div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Process -->
+    <section class="section"
+      style="background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+      <div class="principles-head">
+        <div class="chip reveal" style="margin:0 auto 18px">Our Process</div>
+        <h2 class="sec-title reveal">
+          WebSingh Strongly Believes In These <em>Core Principles</em>
+        </h2>
+        <p class="sec-sub reveal mb-5">
+          At the heart of our success is a dedicated team of digital specialists who bring years of experience in
+          website development, SEO, and performance marketing. By understanding client goals and market needs, we
+          deliver practical solutions that make sense, drive results, and support long-term growth.
+        </p>
+      </div>
+      <div class="principles-grid">
+        <article class="principle-card reveal">
+          <div class="principle-icon"><i class="bi bi-lightbulb"></i></div>
+          <div>
+            <h3>Knowledge</h3>
+            <p>SEO and digital marketing thrive on constant research and updates. Our mission is to keep every client ahead of the curve.</p>
+          </div>
+        </article>
+        <article class="principle-card reveal" style="transition-delay:.08s">
+          <div class="principle-icon"><i class="bi bi-patch-check"></i></div>
+          <div>
+            <h3>Quality</h3>
+            <p>Quality service is our hallmark. Every campaign, design, and build is shaped to perform at a higher standard.</p>
+          </div>
+        </article>
+        <article class="principle-card reveal" style="transition-delay:.16s">
+          <div class="principle-icon"><i class="bi bi-heart"></i></div>
+          <div>
+            <h3>Trust</h3>
+            <p>We stay transparent with our customers and remain serious about privacy, clarity, and dependable communication.</p>
+          </div>
+        </article>
+        <article class="principle-card reveal" style="transition-delay:.24s">
+          <div class="principle-icon"><i class="bi bi-cash-coin"></i></div>
+          <div>
+            <h3>Affordable</h3>
+            <p>We support startups, SMBs, and growing brands with solutions designed to deliver meaningful growth without bloated cost.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section" style="background:var(--bg)">
+      <div class="chip reveal">Client Love</div>
+      <h2 class="sec-title reveal">What Our Clients <em>Say</em></h2>
+      <div class="testi-grid">
+        <div class="testi-card reveal">
+          <div class="stars">★★★★★</div>
+          <p>"WebSingh transformed our online presence. We went from page 4 on Google to top 3 results in just 4 months.
+            Absolutely incredible work!"</p>
+          <div class="testi-author">
+            <div class="avatar">RK</div>
+            <div>
+              <div class="author-name">Rajiv Kumar</div>
+              <div class="author-role">CEO, TechVision India</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal" style="transition-delay:.1s">
+          <div class="stars">★★★★★</div>
+          <p>"Our e-commerce sales doubled in 3 months after partnering with WebSingh. Their PPC campaigns are
+            next-level. ROI we never thought possible!"</p>
+          <div class="testi-author">
+            <div class="avatar">PS</div>
+            <div>
+              <div class="author-name">Priya Sharma</div>
+              <div class="author-role">Founder, StyleHut</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card reveal" style="transition-delay:.2s">
+          <div class="stars">★★★★★</div>
+          <p>"Professional, responsive, and genuinely cares about your results. Best digital marketing agency we've
+            worked with in 10 years of business."</p>
+          <div class="testi-author">
+            <div class="avatar">AM</div>
+            <div>
+              <div class="author-name">Aditya Mehta</div>
+              <div class="author-role">Director, MedCore Solutions</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="cta-banner reveal">
+      <div style="position:relative;z-index:1">
+        <h2>Ready to <em>Dominate</em> Your Market?</h2>
+        <p style="color:var(--muted);margin-top:12px;font-size:.93rem">Book a free strategy call. No commitments, just
+          clarity.</p>
+      </div>
+      <a href="#" class="btn btn-g" onclick="showPage('contact')"
+        style="position:relative;z-index:1;white-space:nowrap"><span>Book Free Call</span><span>→</span></a>
+    </div>
+  </div>
+
+  <!-- ═══════ ABOUT ═══════ -->
+  <div class="page" id="page-about">
+    <div class="about-hero grid-bg">
+      <div class="orb orb-g" style="width:400px;height:400px;top:-80px;right:-80px;z-index:0"></div>
+      <div class="reveal-left">
+        <div class="chip">About WebSingh</div>
+        <h1>We Are Your <em>Growth Partners</em> in the Digital World</h1>
+        <p>Founded with a passion for results, WebSingh has grown into one of India's most trusted digital agencies —
+          helping businesses of all sizes unlock their online potential.</p>
+        <div style="margin-top:32px;display:flex;gap:14px;flex-wrap:wrap">
+          <a href="#" class="btn btn-g" onclick="showPage('contact')"><span>Work With Us</span><span>→</span></a>
+          <a href="#" class="btn btn-o" onclick="showPage('portfolio')"><span>See Our Work</span></a>
+        </div>
+      </div>
+      <div class="about-visual reveal-right">
+        <div class="orb orb-g" style="width:200px;height:200px;top:-40px;right:-40px;opacity:.3"></div>
+        <div class="ws-big">Web<span>Singh</span></div>
+        <div class="ws-tag">Digital Growth Agency · Est. 2012</div>
+        <div class="ab-stats">
+          <div class="ab-stat">
+            <div class="n">12+</div>
+            <div class="l">Years Experience</div>
+          </div>
+          <div class="ab-stat">
+            <div class="n">500+</div>
+            <div class="l">Projects Done</div>
+          </div>
+          <div class="ab-stat">
+            <div class="n">200+</div>
+            <div class="l">Clients Served</div>
+          </div>
+          <div class="ab-stat">
+            <div class="n">98%</div>
+            <div class="l">Satisfaction</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="section" style="background:var(--bg)">
+      <div style="display:grid;grid-template-columns:1.5fr 1fr;gap:44px;align-items:start">
+        <div class="reveal-left">
+          <div class="chip">Our Mission</div>
+          <h2 class="sec-title">Empowering Businesses to <em>Thrive Online</em></h2>
+          <div
+            style="width:48px;height:2px;background:linear-gradient(90deg,var(--g),transparent);margin:18px 0 24px;border-radius:2px">
+          </div>
+          <p style="color:var(--muted);line-height:1.85;margin-bottom:16px">At WebSingh, we believe every business
+            deserves powerful digital marketing. Our mission is to democratize growth by bringing enterprise-level
+            strategy to businesses of every size across India and beyond.</p>
+          <p style="color:var(--muted);line-height:1.85">We combine human expertise with cutting-edge AI tools to
+            deliver campaigns that don't just look good on reports — they move your bottom line.</p>
+                  
+            <ul style="list-style:none;display:flex;flex-direction:column;gap:18px;margin-top: 10px;">
+            <li style="display:flex;align-items:flex-start;gap:14px"><span
+                style="color:var(--g);font-size:1.1rem;margin-top:2px">✓</span>
+              <div><strong style="color:var(--white);font-size:.95rem">Data First, Always</strong>
+                <p style="color:var(--muted);font-size:.87rem;margin-top:4px;line-height:1.65">Every decision backed by
+                  real data — no guesswork, just results.</p>
+              </div>
+            </li>
+            <li style="display:flex;align-items:flex-start;gap:14px"><span
+                style="color:var(--g);font-size:1.1rem;margin-top:2px">✓</span>
+              <div><strong style="color:var(--white);font-size:.95rem">Full Transparency</strong>
+                <p style="color:var(--muted);font-size:.87rem;margin-top:4px;line-height:1.65">Clear reporting and
+                  honest communication at every step.</p>
+              </div>
+            </li>
+            <li style="display:flex;align-items:flex-start;gap:14px"><span
+                style="color:var(--g);font-size:1.1rem;margin-top:2px">✓</span>
+              <div><strong style="color:var(--white);font-size:.95rem">ROI Obsessed</strong>
+                <p style="color:var(--muted);font-size:.87rem;margin-top:4px;line-height:1.65">We measure success by
+                  your returns, not vanity metrics.</p>
+              </div>
+            </li>
+            <li style="display:flex;align-items:flex-start;gap:14px"><span
+                style="color:var(--g);font-size:1.1rem;margin-top:2px">✓</span>
+              <div><strong style="color:var(--white);font-size:.95rem">Dedicated Support</strong>
+                <p style="color:var(--muted);font-size:.87rem;margin-top:4px;line-height:1.65">Your account manager is
+                  always just a call away.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="reveal-right">
+          <img src="asset/img/aboutmain.webp">
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="section"
+      style="background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+      <div class="chip reveal">Our Values</div>
+      <h2 class="sec-title reveal">Principles That Guide <em>Everything We Do</em></h2>
+      <div class="values-grid">
+        <div class="val-card reveal">
+          <h4>🎯 Results-Driven</h4>
+          <p>Every strategy, every ad, every post is built with one goal — your measurable business growth.</p>
+        </div>
+        <div class="val-card reveal" style="transition-delay:.08s">
+          <h4>🔬 Innovation</h4>
+          <p>We stay at the forefront of digital trends, AI, and algorithm updates so you never fall behind.</p>
+        </div>
+        <div class="val-card reveal" style="transition-delay:.16s">
+          <h4>🤝 Partnership</h4>
+          <p>We treat your business like our own. Your success is our success — it's that simple.</p>
+        </div>
+        <div class="val-card reveal" style="transition-delay:.24s">
+          <h4>💡 Creativity</h4>
+          <p>Bold ideas backed by data. We create campaigns that stand out in crowded digital spaces.</p>
+        </div>
+      </div>
+    </section>
+
+ <section class="section" style="background:var(--bg)">
+      <div class="chip reveal">Our Team</div>
+      <h2 class="sec-title reveal">Meet the <em>Experts</em> Behind Your Growth</h2>
+      <p class="sec-sub reveal">A diverse team of strategists, creatives, and tech specialists all focused on your
+        results.</p>
+      <div class="team-grid">
+        <div class="team-card reveal">
+          <div class="team-photo" style="background:linear-gradient(135deg,#0A1628,#0D3426)"><img src="asset/img/seoexpert.webp"></div>
+          <div class="team-info">
+            <h4>Amritpal Singh</h4>
+            <div class="role">SEO & Social Media Expert</div>
+          </div>
+        </div>
+        <div class="team-card reveal" style="transition-delay:.08s">
+          <div class="team-photo" style="background:linear-gradient(135deg,#0A1628,#1a3a2e)"><img src="asset/img/uiuxexpert.webp"></div>
+          <div class="team-info">
+            <h4>Bhajan Singh</h4>
+            <div class="role">Ui/Ux Designerf</div>
+          </div>
+        </div>
+        <div class="team-card reveal" style="transition-delay:.16s">
+          <div class="team-photo" style="background:linear-gradient(135deg,#0A1628,#1a2e38)"><img src="asset/img/webdesigner.webp"></div>
+          <div class="team-info">
+            <h4>Sahil Dutt</h4>
+            <div class="role">Web Designer</div>
+          </div>
+        </div>
+        <div class="team-card reveal" style="transition-delay:.24s">
+          <div class="team-photo" style="background:linear-gradient(135deg,#0A1628,#2a2010)"><img src="asset/img/webdeveloper.webp"></div>
+          <div class="team-info">
+            <h4>Neha Gupta</h4>
+               <div class="role">Web Developers</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="cta-banner reveal">
+      <div style="position:relative;z-index:1">
+        <h2>Want to be Part of Our <em>Success Story?</em></h2>
+      </div><a href="#" class="btn btn-g" onclick="showPage('contact')" style="position:relative;z-index:1"><span>Let's
+          Talk</span><span>→</span></a>
+    </div>
+  </div>
+
+  <!-- ═══════ PORTFOLIO ═══════ -->
+  <div class="page" id="page-portfolio">
+    <div class="port-hero grid-bg">
+      <div class="orb orb-g" style="width:500px;height:500px;top:-120px;left:50%;transform:translateX(-50%);z-index:0">
+      </div>
+      <div class="chip" style="position:relative;z-index:1;margin:0 auto 16px">Our Work</div>
+      <h1>Results That <em>Speak for Themselves</em></h1>
+      <p>Explore our work across industries and digital channels.</p>
+      <div class="filter-row">
+        <button class="fbtn active">All Projects</button>
+        <button class="fbtn">SEO</button>
+        <button class="fbtn">Web Design</button>
+        <button class="fbtn">PPC Ads</button>
+        <button class="fbtn">Social Media</button>
+      </div>
+    </div>
+
+    <section class="section" style="background:var(--bg)">
+      <div class="port-grid">
+        <div class="port-card reveal">
+          <div class="port-thumb" style="background:linear-gradient(135deg,#0a1a10,#003d20)">🛒<div
+              class="port-overlay">View Case Study →</div>
+          </div>
+          <div class="port-info">
+            <div class="port-tag">SEO · eCommerce</div>
+            <h3>StyleHut – Fashion Store</h3>
+            <p>312% organic traffic growth in 6 months. Ranked #1 for 40+ product keywords.</p>
+            <div class="port-tags"><span class="ptag">+312% Traffic</span><span class="ptag">Top 3 Rankings</span></div>
+          </div>
+        </div>
+        <div class="port-card reveal" style="transition-delay:.08s">
+          <div class="port-thumb" style="background:linear-gradient(135deg,#0a1020,#001a3d)">🏥<div
+              class="port-overlay">View Case Study →</div>
+          </div>
+          <div class="port-info">
+            <div class="port-tag">Web Design · Healthcare</div>
+            <h3>MedCore Solutions Website</h3>
+            <p>Complete redesign resulting in 85% increase in lead form submissions.</p>
+            <div class="port-tags"><span class="ptag">+85% Leads</span><span class="ptag">2× Conversions</span></div>
+          </div>
+        </div>
+        <div class="port-card reveal" style="transition-delay:.16s">
+          <div class="port-thumb" style="background:linear-gradient(135deg,#1a0e00,#3d2000)">🏪<div
+              class="port-overlay">View Case Study →</div>
+          </div>
+          <div class="port-info">
+            <div class="port-tag">PPC Ads · Retail</div>
+            <h3>GoldenMart – Local Retail</h3>
+            <p>Google & Meta campaigns delivering 5.2× ROAS with ₹2L monthly ad spend.</p>
+            <div class="port-tags"><span class="ptag">5.2× ROAS</span><span class="ptag">60% Lower CPA</span></div>
+          </div>
+        </div>
+        <div class="port-card reveal" style="transition-delay:.24s">
+          <div class="port-thumb" style="background:linear-gradient(135deg,#0e0a1a,#20003d)">🎓<div
+              class="port-overlay">View Case Study →</div>
+          </div>
+          <div class="port-info">
+            <div class="port-tag">Social Media · Education</div>
+            <h3>EduPath Academy</h3>
+            <p>Instagram & YouTube: 2K to 85K followers in 8 months with organic content.</p>
+            <div class="port-tags"><span class="ptag">85K Followers</span><span class="ptag">42× Growth</span></div>
+          </div>
+        </div>
+        <div class="port-card reveal" style="transition-delay:.32s">
+          <div class="port-thumb" style="background:linear-gradient(135deg,#0a1015,#001a2d)">🏗️<div
+              class="port-overlay">View Case Study →</div>
+          </div>
+          <div class="port-info">
+            <div class="port-tag">SEO · Real Estate</div>
+            <h3>PropVista Realty</h3>
+            <p>Local SEO capturing all "property in Ludhiana" top 3 spots within 3 months.</p>
+            <div class="port-tags"><span class="ptag">#1 Local SEO</span><span class="ptag">200% More Calls</span></div>
+          </div>
+        </div>
+        <div class="port-card reveal" style="transition-delay:.40s">
+          <div class="port-thumb" style="background:linear-gradient(135deg,#0a1a05,#153d00)">🍽️<div
+              class="port-overlay">View Case Study →</div>
+          </div>
+          <div class="port-info">
+            <div class="port-tag">Web Design · Restaurant</div>
+            <h3>Spice Garden Restaurant</h3>
+            <p>New website + online ordering integration, boosting direct orders by 180%.</p>
+            <div class="port-tags"><span class="ptag">+180% Orders</span><span class="ptag">Online Booking</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      style="background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:60px 5%;text-align:center">
+      <div class="chip reveal" style="margin:0 auto 18px">Our Impact</div>
+      <h2 class="sec-title reveal" style="text-align:center">Across <em>All Our Projects</em></h2>
+      <div style="display:flex;justify-content:center;gap:60px;flex-wrap:wrap;margin-top:44px">
+        <div class="reveal" style="text-align:center">
+          <div
+            style="font-family:Syne,sans-serif;font-size:3rem;font-weight:800;background:linear-gradient(135deg,var(--g),var(--g2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">
+            ₹50Cr+</div>
+          <div style="color:var(--muted);margin-top:8px;font-size:.9rem">Revenue Generated for Clients</div>
+        </div>
+        <div class="reveal" style="text-align:center;transition-delay:.1s">
+          <div
+            style="font-family:Syne,sans-serif;font-size:3rem;font-weight:800;background:linear-gradient(135deg,var(--g),var(--g2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">
+            8M+</div>
+          <div style="color:var(--muted);margin-top:8px;font-size:.9rem">Organic Visitors Driven</div>
+        </div>
+        <div class="reveal" style="text-align:center;transition-delay:.2s">
+          <div
+            style="font-family:Syne,sans-serif;font-size:3rem;font-weight:800;background:linear-gradient(135deg,var(--g),var(--g2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">
+            500+</div>
+          <div style="color:var(--muted);margin-top:8px;font-size:.9rem">Successful Campaigns</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="cta-banner reveal">
+      <div style="position:relative;z-index:1">
+        <h2>Want Results Like These <em>For Your Business?</em></h2>
+      </div><a href="#" class="btn btn-g" onclick="showPage('contact')" style="position:relative;z-index:1"><span>Start
+          Today</span><span>→</span></a>
+    </div>
+  </div>
+
+  <!-- ═══════ SERVICES ═══════ -->
+  <div class="page" id="page-services">
+    <div class="svc-hero grid-bg">
+      <div class="orb orb-g" style="width:500px;height:500px;top:-120px;left:50%;transform:translateX(-50%);z-index:0">
+      </div>
+      <div class="chip" style="position:relative;z-index:1;margin:0 auto 16px">What We Offer</div>
+      <h1>Full-Stack <em>Digital Marketing</em> Services</h1>
+      <p>Everything your business needs to win online — under one roof, delivered by experts.</p>
+    </div>
+
+    <section class="section" style="background:var(--bg)">
+      <div class="svc-detailed">
+        <div class="svc-detail reveal">
+          <div class="svc-detail-icon"><i class="bi bi-search"></i></div>
+          <div>
+            <h3>Search Engine Optimisation (SEO)</h3>
+            <p>Our comprehensive SEO service covers everything from technical audits and on-page optimisation to link
+              building and content strategy. We use data-driven methods to rank your site for high-intent keywords that
+              bring buyers, not just visitors.</p>
+            <div class="svc-feats"><span class="sfeat">Technical SEO Audit</span><span class="sfeat">Keyword
+                Research</span><span class="sfeat">On-Page Optimisation</span><span class="sfeat">Link
+                Building</span><span class="sfeat">Content Strategy</span><span class="sfeat">Monthly Reporting</span>
+            </div>
+          </div>
+        </div>
+        <div class="svc-detail reveal" style="transition-delay:.08s">
+          <div class="svc-detail-icon"><i class="bi bi-megaphone"></i></div>
+          <div>
+            <h3>Pay-Per-Click Advertising (PPC)</h3>
+            <p>Stop wasting money on ads that don't convert. Our PPC specialists build tightly targeted campaigns on
+              Google, Meta, and LinkedIn that put your brand in front of the right people at the right moment -> and turn
+              clicks into customers.</p>
+            <div class="svc-feats"><span class="sfeat">Google Ads</span><span class="sfeat">Meta Ads</span><span
+                class="sfeat">LinkedIn Ads</span><span class="sfeat">Retargeting</span><span class="sfeat">Landing Page
+                CRO</span><span class="sfeat">A/B Testing</span></div>
+          </div>
+        </div>
+        <div class="svc-detail reveal" style="transition-delay:.16s">
+          <div class="svc-detail-icon"><i class="bi bi-cpu"></i></div>
+          <div>
+            <h3>AI SEO</h3>
+            <p>Leverage the power of artificial intelligence in your SEO strategy. We use advanced AI tools to predict
+              algorithm changes, automate content optimisation, and identify growth opportunities before your
+              competitors even see them.</p>
+            <div class="svc-feats"><span class="sfeat">AI Content Optimisation</span><span class="sfeat">Predictive
+                Analytics</span><span class="sfeat">Automated Auditing</span><span class="sfeat">Competitor
+                Intelligence</span><span class="sfeat">Voice Search SEO</span></div>
+          </div>
+        </div>
+        <div class="svc-detail reveal" style="transition-delay:.24s">
+          <div class="svc-detail-icon"><i class="bi bi-code-slash"></i></div>
+          <div>
+            <h3>Web Design & Development</h3>
+            <p>Your website is your most valuable digital asset. We design and develop stunning, fast-loading,
+              mobile-first websites engineered to convert visitors into leads and customers.</p>
+            <div class="svc-feats"><span class="sfeat">UI/UX Design</span><span class="sfeat">WordPress /
+                React</span><span class="sfeat">eCommerce</span><span class="sfeat">Speed Optimisation</span><span
+                class="sfeat">Mobile First</span><span class="sfeat">CRO</span></div>
+          </div>
+        </div>
+        <div class="svc-detail reveal" style="transition-delay:.32s">
+          <div class="svc-detail-icon"><i class="bi bi-people"></i></div>
+          <div>
+            <h3>Social Media Marketing</h3>
+            <p>Build a powerful, engaged community around your brand. From content creation to community management and
+              paid social, we handle everything to grow your presence and turn followers into customers.</p>
+            <div class="svc-feats"><span class="sfeat">Content Creation</span><span class="sfeat">Instagram
+                Marketing</span><span class="sfeat">YouTube Strategy</span><span class="sfeat">Community
+                Management</span><span class="sfeat">Influencer Outreach</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background:var(--bg2);border-top:1px solid var(--border)">
+      <div class="chip reveal">Pricing</div>
+      <h2 class="sec-title reveal">Simple, <em>Transparent Pricing</em></h2>
+      <p class="sec-sub reveal">No hidden fees. No lock-in contracts. Just clear value.</p>
+      <div class="price-grid">
+        <div class="price-card reveal">
+          <h3>Starter</h3>
+          <div class="price-amount">₹15,000</div>
+          <div class="price-period">per month</div>
+          <ul class="price-feats">
+            <li>SEO Audit & Setup</li>
+            <li>5 Target Keywords</li>
+            <li>2 Blog Posts/Month</li>
+            <li>Monthly Report</li>
+            <li>Email Support</li>
+          </ul>
+          <a href="#" class="btn btn-o" onclick="showPage('contact')"
+            style="width:100%;justify-content:center"><span>Get Started</span></a>
+        </div>
+        <div class="price-card pop reveal" style="transition-delay:.1s">
+          <div class="pop-badge">Most Popular</div>
+          <h3>Growth</h3>
+          <div class="price-amount">₹35,000</div>
+          <div class="price-period">per month</div>
+          <ul class="price-feats">
+            <li>Full SEO + PPC Management</li>
+            <li>20 Target Keywords</li>
+            <li>8 Blog Posts/Month</li>
+            <li>Social Media (3 platforms)</li>
+            <li>Bi-weekly Reports</li>
+            <li>Dedicated Account Manager</li>
+          </ul>
+          <a href="#" class="btn btn-g" onclick="showPage('contact')"
+            style="width:100%;justify-content:center"><span>Get Started</span></a>
+        </div>
+        <div class="price-card reveal" style="transition-delay:.2s">
+          <h3>Enterprise</h3>
+          <div class="price-amount">Custom</div>
+          <div class="price-period">tailored to you</div>
+          <ul class="price-feats">
+            <li>Full Digital Marketing Suite</li>
+            <li>Unlimited Keywords</li>
+            <li>AI SEO Integration</li>
+            <li>Web Design Included</li>
+            <li>Weekly Strategy Calls</li>
+            <li>Priority 24/7 Support</li>
+          </ul>
+          <a href="#" class="btn btn-o" onclick="showPage('contact')"
+            style="width:100%;justify-content:center"><span>Contact Us</span></a>
+        </div>
+      </div>
+    </section>
+
+    <div class="cta-banner reveal">
+      <div style="position:relative;z-index:1">
+        <h2>Not Sure Which Plan is <em>Right for You?</em></h2>
+      </div><a href="#" class="btn btn-g" onclick="showPage('contact')" style="position:relative;z-index:1"><span>Get
+          Free Consultation</span><span>→</span></a>
+    </div>
+  </div>
+
+  <!-- ═══════ CONTACT ═══════ -->
+  <div class="modal fade offer-modal" id="homeOfferModal" tabindex="-1" aria-labelledby="homeOfferModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered offer-modal-dialog">
+      <div class="modal-content offer-modal-content">
+        <button type="button" class="offer-modal-close" data-bs-dismiss="modal" aria-label="Close">
+          <i class="bi bi-x-lg"></i>
+        </button>
+        <div class="offer-modal-top">
+          <div class="offer-modal-shape offer-shape-left"></div>
+          <div class="offer-modal-shape offer-shape-right"></div>
+          <div class="offer-modal-gift">
+            <i class="bi bi-gift"></i>
+          </div>
+          <p class="offer-modal-tag">Exclusive Offer</p>
+          <h2 id="homeOfferModalLabel">Don't Leave Empty Handed!</h2>
+        </div>
+        <div class="offer-modal-bottom">
+          <div class="offer-modal-discount">
+            <span class="offer-modal-percent hero_main"><em>25%</em></span>
+            <span class="offer-modal-off">OFF</span>
+          </div>
+          <p class="offer-modal-copy">On your first website project. Get professional website design and development at discounted price.</p>
+          <a href="#" class="btn btn-g" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-whatsapp"></i>
+            <span>Claim Offer on WhatsApp</span>
+          </a>
+          <p class="offer-modal-phone"><i class="bi bi-telephone"></i><span>Or call: +91 92160-41313</span></p>
+          <div class="offer-modal-note">Limited time offer for new customers only</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page" id="page-contact">
+    <div class="contact-hero grid-bg">
+      <div class="orb orb-g" style="width:400px;height:400px;top:-80px;right:10%;z-index:0"></div>
+      <div class="chip" style="position:relative;z-index:1;margin:0 auto 14px">Get In Touch</div>
+      <h1>Let's Build Something <em>Amazing</em> Together</h1>
+      <p style="position:relative;z-index:1">Ready to grow? We'll get back to you within 24 hours.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="reveal-left">
+        <h2 class="contact-info"
+          style="font-family:Syne,sans-serif;font-size:1.45rem;font-weight:800;color:var(--white);margin-bottom:28px">
+          Contact Information</h2>
+        <div class="citem">
+          <div class="cicon"><i class="bi bi-geo-alt"></i></div>
+          <div>
+            <h4>Our Office</h4>
+            <p>SCO 22, Digital Hub, Ferozepur Road<br>Ludhiana, Punjab - 141001</p>
+          </div>
+        </div>
+        <div class="citem">
+          <div class="cicon"><i class="bi bi-telephone"></i></div>
+          <div>
+            <h4>Phone</h4>
+            <p>+91 98765 43210</p>
+            <p style="font-size:.8rem;color:var(--muted2);margin-top:3px">Mon-Sat, 9am to 7pm IST</p>
+          </div>
+        </div>
+        <div class="citem">
+          <div class="cicon"><i class="bi bi-envelope"></i></div>
+          <div>
+            <h4>Email</h4>
+            <p>hello@websingh.in</p>
+            <p style="font-size:.8rem;color:var(--muted2);margin-top:3px">We reply within 24 hours</p>
+          </div>
+        </div>
+        <div class="citem">
+          <div class="cicon"><i class="bi bi-globe2"></i></div>
+          <div>
+            <h4>Website</h4>
+            <p>www.websingh.in</p>
+          </div>
+        </div>
+        <p style="font-family:Syne,sans-serif;font-weight:700;color:var(--white);margin-top:28px;margin-bottom:14px">
+          Follow Us</p>
+        <div class="social-row">
+          <a class="slink" title="Instagram"><i class="bi bi-instagram"></i></a>
+          <a class="slink" title="Facebook"><i class="bi bi-facebook"></i></a>
+          <a class="slink" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a class="slink" title="YouTube"><i class="bi bi-youtube"></i></a>
+          <a class="slink" title="X"><i class="bi bi-twitter-x"></i></a>
+        </div>
+      </div>
+
+      <div class="cform reveal-right">
+        <h2>Send Us a Message</h2>
+        <div class="frow">
+          <div class="fgrp"><label>First Name *</label><input type="text" placeholder="Harpreet"></div>
+          <div class="fgrp"><label>Last Name *</label><input type="text" placeholder="Singh"></div>
+        </div>
+        <div class="frow">
+          <div class="fgrp"><label>Email *</label><input type="email" placeholder="you@example.com"></div>
+          <div class="fgrp"><label>Phone</label><input type="tel" placeholder="+91 00000 00000"></div>
+        </div>
+        <div class="fgrp">
+          <label>Service You're Interested In</label>
+          <select>
+            <option value="">Select a service...</option>
+            <option>SEO & Organic Growth</option>
+            <option>PPC Advertising</option>
+            <option>AI SEO</option>
+            <option>Web Design & Development</option>
+            <option>Social Media Marketing</option>
+            <option>Full Digital Marketing Package</option>
+          </select>
+        </div>
+        <div class="fgrp">
+          <label>Monthly Budget</label>
+          <select>
+            <option value="">Select budget range...</option>
+            <option>₹5,000 – ₹15,000</option>
+            <option>₹15,000 – ₹35,000</option>
+            <option>₹35,000 – ₹75,000</option>
+            <option>₹75,000+</option>
+          </select>
+        </div>
+        <div class="fgrp"><label>Tell Us About Your Project *</label><textarea
+            placeholder="Share your goals, challenges, and what you're looking to achieve..."></textarea></div>
+        <button class="sub-btn" onclick="handleSubmit(this)"><span>Send Message →</span></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo" onclick="showPage('home')">
+          <div class="logo-mark">W</div>Web<span>Singh</span>
+        </div>
+        <p>Your trusted digital growth partner. We help businesses across India dominate online through data-driven
+          marketing strategies.</p>
+        <div class="social-row" style="margin-top:18px">
+          <a class="slink" title="Instagram"><i class="bi bi-instagram"></i></a><a class="slink" title="Facebook"><i class="bi bi-facebook"></i></a><a class="slink" title="LinkedIn"><i class="bi bi-linkedin"></i></a><a class="slink" title="YouTube"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+      <div class="fcol">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="#" onclick="showPage('home')">Home</a></li>
+          <li><a href="#" onclick="showPage('about')">About Us</a></li>
+          <li><a href="#" onclick="showPage('portfolio')">Portfolio</a></li>
+          <li><a href="#" onclick="showPage('services')">Services</a></li>
+          <li><a href="#" onclick="showPage('contact')">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="fcol">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">SEO Services</a></li>
+          <li><a href="#">PPC Advertising</a></li>
+          <li><a href="#">AI SEO</a></li>
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">Social Media</a></li>
+          <li><a href="#">Email Marketing</a></li>
+        </ul>
+      </div>
+      <div class="fcol">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="#">Ludhiana, Punjab</a></li>
+          <li><a href="#">+91 98765 43210</a></li>
+          <li><a href="#">hello@websingh.in</a></li>
+          <li><a href="#">www.websingh.in</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 <span>WebSingh</span>. All rights reserved.</span>
+      <span style="color:var(--muted)">Privacy Policy · Terms of Service</span>
+    </div>
+  </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="asset/js/custom.js"></script>
+
+</html>
